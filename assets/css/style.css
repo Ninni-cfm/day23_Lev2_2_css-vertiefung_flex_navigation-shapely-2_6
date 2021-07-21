@@ -1,38 +1,46 @@
 /*****************************************************************************
-	Assets to use:
+	Assets to use for navigation:
 	* Font-family:"Raleway"
-	* Headerhöhe:76px
-	* Logofarbe: #666
-	* Logofarbe in hover: #333
-	* Menüfarbe: #333 
-	* Menüfarbe in hover: #337ab7
+	* Header height:76px
+	* Color of Logo button:: #666
+	* Color of Logo button:hover: #333
+	* Color of menu button: #333 
+	* Color of menu button:hover: #337ab7
+
 */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /*****************************************************************************
+    some defaut settings like scroll behavior etc...
 */
 html {
     scroll-behavior: smooth;
 }
+/*----------------------------------------------------------------------------
+    Remove margins and paddings for all elements 
+*/
 * {
     margin: 0;
     padding: 0;
 }
 
 /*****************************************************************************
+    Defaults for the whole body
 */
 body {
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
 }
 
 /*****************************************************************************
+    Header and navigation setup, positioning and sizes
 */
 header {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: space-between;
+
+    background: white;
 }
 nav {
     height: 76px;
@@ -41,13 +49,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-weight: 600;
 }
 /*----------------------------------------------------------------------------
+    Navigation: link with logo
 */
 .logo {
     text-decoration: none;
     color: #666;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 .logo:visited {
     color: #666;
@@ -56,6 +67,7 @@ nav {
     color: #333;
 }
 /*----------------------------------------------------------------------------
+    Navigation: unordered list with links
 */
 nav ul {
     width: 70%;
