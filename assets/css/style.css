@@ -7,28 +7,47 @@
 	* Menüfarbe: #333 
 	* Menüfarbe in hover: #337ab7
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-body {
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    padding: 1%;
+/*****************************************************************************
+*/
+html {
+    scroll-behavior: smooth;
 }
-nav {
-    padding: 1% 2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 2px solid #66666680;
-    border-bottom: 1px solid #66666680;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/*****************************************************************************
+*/
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+/*****************************************************************************
+*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: space-between;
+}
+nav {
+    height: 76px;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*----------------------------------------------------------------------------
+*/
 .logo {
     text-decoration: none;
     color: #666;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 .logo:visited {
     color: #666;
@@ -36,15 +55,17 @@ nav {
 .logo:hover {
     color: #333;
 }
-
+/*----------------------------------------------------------------------------
+*/
 nav ul {
-    width: 60%;
+    width: 70%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 nav li a {
+    padding: 0%;
     text-decoration: none;
     color: #333;
 }
@@ -54,3 +75,6 @@ nav li a:visited {
 nav li a:hover {
     color: #337ab7;
 }
+
+/*****************************************************************************
+*/
